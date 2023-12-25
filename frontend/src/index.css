@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* To Fix The Rounded Problem With Border In Css TailWind */
+table{
+    border-collapse: collapse;
+    border-collapse: separate; 
+}
+  
+@media screen and (max-width: 915px) {
+    .forceleft{
+        margin-right: 0px !important;
+    }
+}
+
+.darklightid {
+    color: black;
+}
