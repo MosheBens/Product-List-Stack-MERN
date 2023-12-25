@@ -6,7 +6,7 @@ import { Product } from "../models/productModel.js";
 
 const router = exprees.Router();
 
-// Route for Save a new Book
+// Route for Save a new Product
 router.post("/", async (req,res) => {
     try{
         if(           
@@ -34,7 +34,7 @@ router.post("/", async (req,res) => {
     }
 });
 
-//Route for get all books from DB
+//Route for get all Products from DB
 router.get("/", async (req,res) => {
     try{
         const products = await Product.find({});
@@ -49,7 +49,7 @@ router.get("/", async (req,res) => {
     }
 });
 
-//Route for get one book from DB by id
+//Route for get one Product from DB by id
 router.get("/:id", async (req,res) => {
     try{
         const { id } = req.params;
@@ -62,7 +62,7 @@ router.get("/:id", async (req,res) => {
     }
 });
 
-//route for update a book
+//route for update a Product
 router.put("/:id", async (req,res) => {
     try{
         if(
@@ -88,7 +88,7 @@ router.put("/:id", async (req,res) => {
     }
 });
 
-//route for delete a book
+//route for delete a Product
 router.delete("/:id", async (req,res) => {
     try{
         const { id } = req.params;
