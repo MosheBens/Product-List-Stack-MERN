@@ -1,3 +1,6 @@
+https://github.com/MosheBens/Product-List-Stack-MERN/assets/119537876/ce43f362-2939-49d4-a017-f047ce61e7c9
+
+
 in backend folder run 
                       <br></br>
                       : 1) npm init -y
